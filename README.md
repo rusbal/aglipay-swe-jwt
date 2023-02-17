@@ -1,24 +1,9 @@
-# README
+Please create an E-Commerce application with the option to manage products, orders, users, and payments.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Use JWT for user authentication
+- Create API endpoints to perform CRUD operations on a user
+- Create endpoints to purchase a product
+- Products need to be divided into categories
+- Setup an active admin console for performing CRUD operations on orders, products, categories and users
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Please use RSpec for writing unit tests
