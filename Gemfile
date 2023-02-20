@@ -59,3 +59,4 @@ gem 'bundler'
 
 gem 'devise'
 gem 'activeadmin'
+gem 'gon'
