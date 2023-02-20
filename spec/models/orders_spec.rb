@@ -5,4 +5,21 @@ RSpec.describe Order, type: :model do
     it { should belong_to(:user) }
     it { should belong_to(:product) }
   end
+
+  # Validations
+  let(:quantity) { 1 }
+  let(:subject) do
+    build(:order, quantity: quantity)
+  end
+
+  it "is valid with valid attributes" do
+    expect(subject).to be_valid
+  end
+
+  context "when quantity is zero" do
+    let(:quantity) { 0 }
+    it "is not valid" do
+      expect(subject).to_not be_valid
+    end
+  end
 end
